@@ -102,15 +102,14 @@ curl -X POST \
 
 ## 4. Publish event
 
+Go to 
 ```shell
-curl -X POST https://localhost:8000/api \
-  -H "Authorization: apikey YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "method": "publish",
-    "params": {
-      "channel": "private-room:VNG",
-      "data": {"event": "order_created", "id": 123}
-    }
-  }'
+http://localhost:8000/#/actions
 ```
+
+Publish mesasge
+![publish-message](./docs/publish-message.png)
+
+## 5. Run client
+
+![client](client.png)
