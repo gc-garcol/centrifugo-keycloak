@@ -1,0 +1,23 @@
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:21.0.1
+    ports:
+      - "8080:8080"
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    command: start-dev
+
+  centrifugo:
+    image: centrifugo/centrifugo:v4.1.2
+    ports:
+      - "8000:8000"
+    environment:
+      CENTRIFUGO_ADMIN: "true"
+      CENTRIFUGO_ADMIN_SECRET: admin
+      CENTRIFUGO_ADMIN_PASSWORD: admin
+    volumes:
+      - ./centrifugo.json:/centrifugo/config.json
+    command: centrifugo --config /centrifugo/config.json
+    depends_on:
+      - keycloak

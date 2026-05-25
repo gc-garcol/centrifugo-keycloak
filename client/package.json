@@ -1,0 +1,12 @@
+{
+  "name": "centrifugo-oauth2-client",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "centrifuge": "^5.2.1",
+    "ws": "^8.18.0"
+  }
+}
