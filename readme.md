@@ -30,10 +30,7 @@ docker compose restart centrifugo
 
 Or in new dashboard
 
-<img width="947" height="478" alt="image" src="https://github.com/user-attachments/assets/8dfe1570-dfb9-491e-8cb3-6fc08bee1b0a" />
-
-<img width="779" height="480" alt="image" src="https://github.com/user-attachments/assets/956900e5-0c28-47dd-bd02-b4371f46b8b9" />
-
+<img width="505" height="448" alt="image" src="https://github.com/user-attachments/assets/155e6429-cd66-49b1-b7e6-b428baa61c2c" />
 
 ### 1.c. Tạo Protocol Mapper
 Vào client partner-service-vng → tab Client scopes → click vào partner-service-vng-dedicated → Add mapper → By configuration → chọn User Attribute:
