@@ -76,27 +76,27 @@ curl -X POST \
 
 ## 3. Config centrifugo
 
-```shell
+```json
 {
-  "client": {
-    "token": {
-      "jwks_public_endpoint": "http://localhost:8080/realms/partner/protocol/openid-connect/certs",
-      "audience": "account"
+  "token_jwks_public_endpoint": "http://host.docker.internal:8080/realms/partner/protocol/openid-connect/certs",
+  "allowed_origins": ["*"],
+  "namespaces": [
+    {
+      "name": "private-room",
+      "presence": true,
+      "history_size": 10,
+      "history_ttl": "300s",
+      "join_leave": true,
+      "force_push_join_leave": false
     },
-    "allowed_origins": ["*"]
-  },
-  "channel": {
-    "namespaces": [
-      {
-        "name": "private-room",
-        "presence": true,
-        "history_size": 10,
-        "history_ttl": "300s",
-        "join_leave": true,
-        "force_push_join_leave": false
-      }
-    ]
-  }
+    {
+      "name": "public-room",
+      "presence": true,
+      "history_size": 10,
+      "history_ttl": "300s",
+      "join_leave": true
+    }
+  ]
 }
 ```
 
