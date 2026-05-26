@@ -28,6 +28,11 @@ docker compose restart centrifugo
 - Key: channels
 - Value: private-room:VNG (nếu cần nhiều channels, thêm từng dòng: private-room:VNG, public-room:GLOBAL, ...)
 
+Or in new dashboard
+
+<img width="947" height="478" alt="image" src="https://github.com/user-attachments/assets/8dfe1570-dfb9-491e-8cb3-6fc08bee1b0a" />
+
+
 ### 1.c. Tạo Protocol Mapper
 Vào client partner-service-vng → tab Client scopes → click vào partner-service-vng-dedicated → Add mapper → By configuration → chọn User Attribute:
 
