@@ -32,6 +32,8 @@ Or in new dashboard
 
 <img width="505" height="448" alt="image" src="https://github.com/user-attachments/assets/155e6429-cd66-49b1-b7e6-b428baa61c2c" />
 
+<img width="710" height="460" alt="image" src="https://github.com/user-attachments/assets/30c9cca1-23da-439c-b48b-3c2e21266edf" />
+
 ### 1.c. Tạo Protocol Mapper
 Vào client partner-service-vng → tab Client scopes → click vào partner-service-vng-dedicated → Add mapper → By configuration → chọn User Attribute:
 
