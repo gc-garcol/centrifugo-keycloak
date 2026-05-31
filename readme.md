@@ -118,4 +118,4 @@ Publish mesasge
 
 ## 5. Run client
 
-![client](client.png)
+![client](./docs/client.png)

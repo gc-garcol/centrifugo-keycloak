@@ -4,7 +4,7 @@ import WebSocket from 'ws';
 const KEYCLOAK_TOKEN_URL = 'http://localhost:8080/realms/partner/protocol/openid-connect/token';
 const CENTRIFUGO_WS_URL = 'ws://localhost:8000/connection/websocket';
 const CLIENT_ID = 'partner-vng-id';
-const CLIENT_SECRET = 'AyiUMUN3m2TJ1LstrviFV2qjALHnBZ6Z';
+const CLIENT_SECRET = 'MGbfE5ku3yoFt9wkGSoLq4pMKNO0tMYJ';
 
 async function fetchToken() {
   const res = await fetch(KEYCLOAK_TOKEN_URL, {
@@ -60,7 +60,7 @@ async function main() {
   centrifuge.on('error', (ctx) => console.error('Connection error:', ctx));
 
   subscribeToChannel(centrifuge, 'private-room:VNG');
-  subscribeToChannel(centrifuge, 'public-room:GLOBAL');
+  subscribeToChannel(centrifuge, 'public:exchange_rate');
 
   centrifuge.connect();
 
