@@ -3,7 +3,7 @@
   "allowed_origins": [
     "*"
   ],
-  "client_insecure": true,
+  "client_insecure": false,
   "namespaces": [
     {
       "name": "private-room",
